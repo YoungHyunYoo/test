@@ -1,0 +1,42 @@
+AC_INIT(configure.in)
+
+AM_CONFIG_HEADER(config.h)
+AM_INIT_AUTOMAKE(orkaudio, 1.0)
+ 
+speex_lib=speex
+
+if [cat /etc/issue | grep Ubuntu]; then
+	speex_lib=speex
+fi
+
+if [grep "release 5" /etc/redhat-release]; then
+    CXXFLAGS+="-DCENTOS_5"
+fi
+
+# Check if gcc supports cpp11
+if [echo "main(){}" | $CXX -std=c++11 -xc++ -S -  &>/dev/null]; then
+	CXXFLAGS+=" -g -O2 -fno-inline-functions -std=c++11 -DSUPPORTS_CPP11"
+	LDFLAGS+=" -ldl"
+else
+	CXXFLAGS+=" -g -O2 -fno-inline-functions"
+fi
+
+AC_LANG_CPLUSPLUS
+AC_PROG_CXX
+AM_PROG_LIBTOOL
+
+AC_PREFIX_DEFAULT(/usr)
+
+AC_SUBST(speex_lib,$speex_lib)
+	
+AC_OUTPUT(Makefile audiocaptureplugins/Makefile audiocaptureplugins/generator/Makefile audiocaptureplugins/voip/Makefile filters/Makefile filters/rtpmixer/Makefile filters/silkcodec/Makefile)
+
+echo ""
+echo "========= Configuration ==========="
+echo ""
+echo "     cxx : $CXX"
+echo "cxxflags : $CXXFLAGS"
+echo " ldflags : $LDFLAGS"
+echo "   speex : $speex_lib"
+echo ""
+echo "==================================="

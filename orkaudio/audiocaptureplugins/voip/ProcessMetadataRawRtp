@@ -1,0 +1,102 @@
+void VoIpSession::ProcessMetadataRawRtp(RtpPacketInfoRef& rtpPacket)
+{
+	bool sourceIsLocal = true;
+
+	if(DLLCONFIG.IsMediaGateway(rtpPacket->m_sourceIp))
+	{
+		if(DLLCONFIG.IsMediaGateway(rtpPacket->m_destIp))
+		{
+			// media gateway to media gateway
+			sourceIsLocal = false;
+		}
+		else if (DLLCONFIG.IsPartOfLan(rtpPacket->m_destIp))
+		{
+			// Media gateway to internal
+			sourceIsLocal = false;
+		}
+		else
+		{
+			// Media gateway to external
+			sourceIsLocal = true;
+		}
+	}
+	else if (DLLCONFIG.IsPartOfLan(rtpPacket->m_sourceIp))
+	{
+		// source address is internal
+		sourceIsLocal = true;
+	}
+	else
+	{
+		// source address is external
+		sourceIsLocal = false;
+	}
+
+	char szSourceIp[16];
+	ACE_OS::inet_ntop(AF_INET, (void*)&rtpPacket->m_sourceIp, szSourceIp, sizeof(szSourceIp));
+	char szDestIp[16];
+	ACE_OS::inet_ntop(AF_INET, (void*)&rtpPacket->m_destIp, szDestIp, sizeof(szDestIp));
+
+	if(DLLCONFIG.m_sangomaEnable)
+	{
+		m_capturePort = IntToString(rtpPacket->m_sourcePort % 1000);
+	}
+	else
+	{
+		m_capturePort = m_trackingId;
+	}
+
+	if(sourceIsLocal)
+	{
+		if(!m_rtcpLocalParty)
+		{
+	                /* With Raw RTP, the local party is not obtained through any intelligent
+        	         * signalling so we should probably do this check here? */
+                	if(DLLCONFIG.m_useMacIfNoLocalParty)
+	                {
+        	                MemMacToHumanReadable((unsigned char*)rtpPacket->m_sourceMac, m_localParty);
+                	}
+	                else
+        	        {
+				CStdString lp(szSourceIp);
+                	        m_localParty = VoIpSessionsSingleton::instance()->GetLocalPartyMap(lp);
+	                }
+		}
+		if(!m_rtcpRemoteParty)
+		{
+			CStdString rp(szDestIp);
+			m_remoteParty = VoIpSessionsSingleton::instance()->GetLocalPartyMap(rp);
+		}
+
+		m_localIp = rtpPacket->m_sourceIp;
+		m_remoteIp = rtpPacket->m_destIp;
+		memcpy(m_localMac, rtpPacket->m_sourceMac, sizeof(m_localMac));
+		memcpy(m_remoteMac, rtpPacket->m_destMac, sizeof(m_remoteMac));
+	}
+	else
+	{
+		if(!m_rtcpLocalParty)
+		{
+	                /* With Raw RTP, the local party is not obtained through any intelligent
+        	         * signalling so we should probably do this check here? */
+			if(DLLCONFIG.m_useMacIfNoLocalParty)
+        	        {
+                	        MemMacToHumanReadable((unsigned char*)rtpPacket->m_destMac, m_localParty);
+			}
+			else
+			{
+				CStdString lp(szDestIp);
+				m_localParty = VoIpSessionsSingleton::instance()->GetLocalPartyMap(lp);
+			}
+		}
+		if(!m_rtcpRemoteParty)
+		{
+			CStdString rp(szSourceIp);
+			m_remoteParty = VoIpSessionsSingleton::instance()->GetLocalPartyMap(rp);
+		}
+
+		m_localIp = rtpPacket->m_destIp;
+		m_remoteIp = rtpPacket->m_sourceIp;
+                memcpy(m_localMac, rtpPacket->m_destMac, sizeof(m_localMac));
+                memcpy(m_remoteMac, rtpPacket->m_sourceMac, sizeof(m_remoteMac));
+	}
+}

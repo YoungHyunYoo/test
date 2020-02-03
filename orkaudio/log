@@ -1,0 +1,3276 @@
+2020-02-05 16:39:43,235  INFO root:210 - 
+
+OrkAudio service starting
+
+2020-02-05 16:39:43,239  INFO root:109 - Loaded plugin : /usr/lib/libvoip.so
+2020-02-05 16:39:43,243  INFO packet:1972 - Initializing VoIP plugin
+2020-02-05 16:39:43,243  INFO packet:1677 - Available pcap devices:
+2020-02-05 16:39:43,243  INFO packet:1684 - * eth0 - 
+2020-02-05 16:39:43,243  INFO packet:1476 - Setting pcap socket buffer size:67108864 bytes successful
+2020-02-05 16:39:43,310  INFO packet:1500 - Activating pcaphandle:f4aba0 successfully
+2020-02-05 16:39:43,310  INFO packet:1515 - Setting setsockopt with bufsize:8388608 successfully
+2020-02-05 16:39:43,310  INFO packet:1607 - Successfully opened device. pcap handle:f4aba0 message:
+2020-02-05 16:39:43,310  INFO packet:1684 - * lo - 
+2020-02-05 16:39:43,310  INFO packet:1684 - * any - Pseudo-device that captures on all interfaces
+2020-02-05 16:39:43,310  INFO packet:1684 - * nflog - Linux netfilter log (NFLOG) interface
+2020-02-05 16:39:43,310  INFO packet:1684 - * nfqueue - Linux netfilter queue (NFQUEUE) interface
+2020-02-05 16:39:43,310  INFO packet:1684 - * usbmon1 - USB bus number 1
+2020-02-05 16:39:43,310  INFO packet:1684 - * usbmon2 - USB bus number 2
+2020-02-05 16:39:43,310  INFO packet:1684 - * usbmon3 - USB bus number 3
+2020-02-05 16:39:43,310  INFO packet:1684 - * usbmon4 - USB bus number 4
+2020-02-05 16:39:43,310  INFO packet:1684 - * usbmon5 - USB bus number 5
+2020-02-05 16:39:43,310  INFO packet:1929 - LoadSkinnyGlobalNumbersList: Could not open file:skinnyglobalnumbers.csv -- trying:/etc/orkaudio/skinnyglobalnumbers.csv now
+2020-02-05 16:39:43,310  INFO packet:1935 - LoadPartyMaps: Could not open file:/etc/orkaudio/skinnyglobalnumbers.csv either -- giving up
+2020-02-05 16:39:43,311  INFO root:122 - Loaded plugin: /usr/lib/orkaudio/plugins//libsilkcodec.so
+2020-02-05 16:39:43,311  INFO sik:241 - SILK codec filter initialized.
+2020-02-05 16:39:43,311  INFO root:122 - Loaded plugin: /usr/lib/orkaudio/plugins//librtpmixer.so
+2020-02-05 16:39:43,311  INFO taperegistry:68 - Registered processor: BatchProcessing
+2020-02-05 16:39:43,311  INFO taperegistry:68 - Registered processor: CommandProcessing
+2020-02-05 16:39:43,311  INFO taperegistry:68 - Registered processor: Reporting
+2020-02-05 16:39:43,312  INFO taperegistry:68 - Registered processor: TapeFileNaming
+2020-02-05 16:39:43,312  INFO taperegistry:68 - Registered processor: DirectionSelector
+2020-02-05 16:39:43,312  INFO reporting:281 - [localhost:8080/orktrack] reporting thread started
+2020-02-05 16:39:43,313  INFO immediateProcessing:119 - thread starting - queue size:10000
+2020-02-05 16:39:43,313  INFO sttProcessing:102 - Stt thread starting - queue size:
+2020-02-05 16:39:43,315  INFO httpserver:171 - Started HTTP server on port:59140
+2020-02-05 16:39:43,315  INFO directionSelector:185 - thread Th0 starting - queue size:20000
+2020-02-05 16:39:43,315  INFO directionSelector:130 - LoadAreaCodesMaps: Could not open file:area-codes-recorded-side.csv -- trying:/etc/orkaudio/area-codes-recorded-side.csv now
+2020-02-05 16:39:43,315  INFO directionSelector:136 - LoadAreaCodesMaps: Could not open file:/etc/orkaudio/area-codes-recorded-side.csv either -- giving up
+2020-02-05 16:39:43,315  INFO batchProcessing:234 - thread Th0 starting - queue size:20000
+2020-02-05 16:39:43,315  INFO tapeFileNamingLog:89 - Started
+2020-02-05 16:39:43,316  INFO eventstreamingserver:308 - Started event streaming server on port:59150
+2020-02-05 16:39:43,316  INFO batchProcessing:109 - Command Processing thread Th0 starting - queue size:10000
+2020-02-05 16:39:43,316  INFO packet:1090 - Start Capturing: pcap handle:f4aba0
+2020-02-05 16:39:43,318  WARN reporting:327 - [localhost:8080/orktrack] init connection:true success:false comment:OrkObjectFactory class does not existinit 
+2020-02-05 16:39:44,860  INFO sip:1699 - INVITE: sender:192.168.99.97 from:2864@192.168.99.252 RTP:192.168.99.97,33744 to:01087011078@192.168.99.252 rcvr:192.168.99.252 callid:95c050a8-c0a86361-ac39639-691cf@192.168.99.252 smac:00:19:1a:00:62:92 rmac:00:15:17:fa:f7:08 fromname:2864 toname: ua:IRLink-ZiPhoneX-SIP210-v06.20 requesturi:01087011078 a:sendonly:not-present telephone-event-payload-type:
+2020-02-05 16:39:44,861  INFO rtpsessions:3502 - [PRMH] media address:192.168.99.97,33744 Sip callId:95c050a8-c0a86361-ac39639-691cf@192.168.99.252 endpoint:24.2.0.184
+2020-02-05 16:39:44,861  INFO rtpsessions:2403 - [PRMH] created by INVITE:sender:192.168.99.97 from:2864@192.168.99.252 RTP:192.168.99.97,33744 to:01087011078@192.168.99.252 rcvr:192.168.99.252 callid:95c050a8-c0a86361-ac39639-691cf@192.168.99.252 smac:00:19:1a:00:62:92 rmac:00:15:17:fa:f7:08 fromname:2864 toname: ua:IRLink-ZiPhoneX-SIP210-v06.20 requesturi:01087011078 a:sendonly:not-present telephone-event-payload-type:
+2020-02-05 16:39:44,998  INFO sip:1699 - INVITE: sender:192.168.99.97 from:2864@192.168.99.252 RTP:192.168.99.97,33744 to:01087011078@192.168.99.252 rcvr:192.168.99.252 callid:95c050a8-c0a86361-ac39639-691cf@192.168.99.252 smac:00:19:1a:00:62:92 rmac:00:15:17:fa:f7:08 fromname:2864 toname: ua:IRLink-ZiPhoneX-SIP210-v06.20 requesturi:01087011078 a:sendonly:not-present telephone-event-payload-type:
+2020-02-05 16:39:44,998  INFO rtpsession:1841 - [PRMH] associating INVITE:sender:192.168.99.97 from:2864@192.168.99.252 RTP:192.168.99.97,33744 to:01087011078@192.168.99.252 rcvr:192.168.99.252 callid:95c050a8-c0a86361-ac39639-691cf@192.168.99.252 smac:00:19:1a:00:62:92 rmac:00:15:17:fa:f7:08 fromname:2864 toname: ua:IRLink-ZiPhoneX-SIP210-v06.20 requesturi:01087011078 a:sendonly:not-present telephone-event-payload-type:
+2020-02-05 16:39:45,101  INFO sip:1699 - INVITE: sender:192.168.99.252 from:0269052864@192.168.99.252 RTP:192.168.99.252,8126 to:01087011078@192.168.99.253 rcvr:192.168.99.253 callid:z9j6wM_m0JzHVR8AYb9D7g.. smac:00:15:17:fa:f7:08 rmac:00:08:52:45:25:08 fromname: toname: ua:3CXPhoneSystem requesturi:01087011078 a:sendonly:not-present telephone-event-payload-type:
+2020-02-05 16:39:45,101  INFO rtpsessions:3502 - [PRMI] media address:192.168.99.252,8126 Sip callId:z9j6wM_m0JzHVR8AYb9D7g.. endpoint:0.0.0.0
+2020-02-05 16:39:45,101  INFO rtpsessions:2403 - [PRMI] created by INVITE:sender:192.168.99.252 from:0269052864@192.168.99.252 RTP:192.168.99.252,8126 to:01087011078@192.168.99.253 rcvr:192.168.99.253 callid:z9j6wM_m0JzHVR8AYb9D7g.. smac:00:15:17:fa:f7:08 rmac:00:08:52:45:25:08 fromname: toname: ua:3CXPhoneSystem requesturi:01087011078 a:sendonly:not-present telephone-event-payload-type:
+2020-02-05 16:39:49,635  INFO rtpsession:1347 - [PRMH] 1st packet s1: 192.168.99.252,8124 192.168.99.97,33744 ssrc:0x899 seq:5577 ts:44584 len:160 type:8 ats:1580938789
+2020-02-05 16:39:49,635  INFO rtpsession:1628 - [PRMH] new RTP stream: 192.168.99.252,8124 192.168.99.97,33744 ssrc:0x899 seq:5577 ts:44584 len:160 type:8 ats:1580938789
+2020-02-05 16:39:49,655  INFO rtpsession:315 - [PRMH] PRMH Sip Session start, timestamp:1580938789
+2020-02-05 16:39:49,655 ERROR port:54 - Filter:LiveMonitoring does not exist, please check <CapturePortFilters> in config.xml
+2020-02-05 16:39:49,655  INFO port:329 - [PRMH] #PRMH start
+2020-02-05 16:39:49,655  INFO reporting:190 - [localhost:8080/orktrack] enqueued: type=tape recid=20200205_163949_PRMH stage=start captureport=PRMH timestamp=1580938789 filename=2020/02/05/16/20200205_163949_PRMH localparty=2864 localentrypoint= remoteparty=01087011078 direction=out duration=0 service=orkaudio-root localip=192.168.99.97 remoteip=192.168.99.252 nativecallid=95c050a8-c0a86361-ac39639-691cf@192.168.99.252 tags= ondemand=false side=both live=true hostname=root 
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 Write 6
+2 WriteStt : 6
+3 WriteStt : 5
+2 Write 5
+3 Write 5
+2020-02-05 16:39:49,655  INFO sttProcessing:157 - Stt Server Connection success
+4 WriteStt : 2
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+4 Write 2
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+2020-02-05 16:39:49,669  INFO sip:1699 - 200 OK: sender:192.168.99.97 from:2864@192.168.99.252 RTP:192.168.99.252,8124 to:01087011078@192.168.99.252 rcvr:192.168.99.252 callid:95c050a8-c0a86361-ac39639-691cf@192.168.99.252 smac:00:15:17:fa:f7:08 rmac:00:19:1a:00:62:92 fromname:2864 toname: ua:3CXPhoneSystem requesturi: a:sendonly:not-present telephone-event-payload-type:
+2020-02-05 16:39:49,669  INFO rtpsessions:3502 - [PRMH] media address:192.168.99.252,8124 Sip callId:95c050a8-c0a86361-ac39639-691cf@192.168.99.252 endpoint:24.2.0.184
+2020-02-05 16:39:49,669  INFO rtpsession:1841 - [PRMH] associating INVITE:sender:192.168.99.97 from:2864@192.168.99.252 RTP:192.168.99.252,8124 to:01087011078@192.168.99.252 rcvr:192.168.99.252 callid:95c050a8-c0a86361-ac39639-691cf@192.168.99.252 smac:00:15:17:fa:f7:08 rmac:00:19:1a:00:62:92 fromname:2864 toname: ua:3CXPhoneSystem requesturi: a:sendonly:not-present telephone-event-payload-type:
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+2020-02-05 16:39:49,768  INFO rtpsession:1435 - [PRMH] 1st packet s2: 192.168.99.97,33744 192.168.99.252,8124 ssrc:0x12f45253 seq:0 ts:0 len:160 type:8 ats:1580938789
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 5
+5 WriteStt : 4
+6 WriteStt : 4
+1 Write 8
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 3
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 3
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+2020-02-05 16:39:50,255  INFO rtpsession:1347 - [PRMI] 1st packet s1: 192.168.99.252,8126 192.168.99.253,24750 ssrc:0x6f3f seq:20313 ts:73617 len:160 type:0 ats:1580938790
+2020-02-05 16:39:50,255  INFO rtpsession:1628 - [PRMI] new RTP stream: 192.168.99.252,8126 192.168.99.253,24750 ssrc:0x6f3f seq:20313 ts:73617 len:160 type:0 ats:1580938790
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 3
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 3
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 3
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 3
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 3
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+4 SttFile::WriteChunk : 7
+1 Write 8
+1 MediaChunkFile::WriteChunk : 8
+2 MediaChunkFile::WriteChunk : 8
+3 MediaChunkFile::WriteChunk : 9
+6 MediaChunkFile::WriteChunk : 9
+5 Write 8
+6 Write 8
+6 Write 0
+5 SttFile::WriteChunk : 3
+6 SttFile::WriteChunk : 3
+5 WriteStt : 2
+6 WriteStt : 2
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 Write 3
+1 MediaChunkFile::WriteChunk : 3
+2 MediaChunkFile::WriteChunk : 3
+3 MediaChunkFile::WriteChunk : 4
+6 MediaChunkFile::WriteChunk : 4
+5 Write 3
+6 Write 3
+6 Write 0
+1 WriteStt : 3
+1 SttFile::WriteChunk : 3
+2 SttFile::WriteChunk : 3
+3 SttFile::WriteChunk : 4
+6 SttFile::WriteChunk : 4
+5 WriteStt : 3
+6 WriteStt : 3
+6 WriteStt : 0
+
+CapturePluginProxy::AudioChunkCallBack : 2
+CapturePort::AddAudioChunk 3
+1 AudioTape::AddAudioChunk : 4
+2 AudioTape::AddAudioChunk : 5
+3 AudioTape::AddAudioChunk : 6
+1 WriteStt : 6
+1 SttFile::WriteChunk : 6
+2 SttFile::WriteChunk : 6
+3 SttFile::WriteChunk : 7
+6 SttFile::WriteChunk : 7
+5 WriteStt : 6
+6 WriteStt : 6
+6 WriteStt : 0
+1 Write 6
+1 MediaChunkFile::WriteChunk : 6
+2 MediaChunkFile::WriteChunk : 6
+3 MediaChunkFile::WriteChunk : 7
+6 MediaChunkFile::WriteChunk : 7
+5 Write 6
+6 Write 6
+6 Write 0
+2020-02-05 16:39:50,927  INFO sip:140 - BYE: sender:192.168.99.97 rcvr:192.168.99.252 callid:95c050a8-c0a86361-ac39639-691cf@192.168.99.252 from:2864 to:01087011078 fromDomain:192.168.99.252 toDomain:192.168.99.252 fromName:2864 toName:
+ReportSipBye
+
+VoIpSession::Stop
+
+2020-02-05 16:39:50,927  INFO rtpsession:96 - [PRMH] PRMH Session stop, numRtpPkts:123 dupl:1 seqDelta:1 rtpNumMissingPkts:0 rtpNumSeqGaps:0 lastUpdated:1580938790
+2020-02-05 16:39:50,927  INFO port:356 - [PRMH] #PRMH stop
+2020-02-05 16:39:50,927  INFO tapelist:653 - date=2020-02-05_16-39-49 duration=1 direction=out localside=both audiokeepdirection=both capturePort=PRMH localParty=2864 remoteParty=01087011078 localEntryPoint= localIp=192.168.99.97 remoteIp=192.168.99.252 filename=2020/02/05/16/20200205_163949_PRMH.wav ondemand=false 
+2020-02-05 16:39:50,927  INFO reporting:190 - [localhost:8080/orktrack] enqueued: type=tape recid=20200205_163949_PRMH stage=stop captureport=PRMH timestamp=1580938789 filename=2020/02/05/16/20200205_163949_PRMH.wav localparty=2864 localentrypoint= remoteparty=01087011078 direction=out duration=1 service=orkaudio-root localip=192.168.99.97 remoteip=192.168.99.252 nativecallid=95c050a8-c0a86361-ac39639-691cf@192.168.99.252 tags= ondemand=false side=both live=true hostname=root 
+6 WriteStt : 0
+6 Write 0
+2020-02-05 16:39:50,928  INFO batchProcessing:270 - [PRMH] Th0 processing 20200205_163949_PRMH localside:both audiokeepdirection:both
+2020-02-05 16:39:50,928  INFO batchProcessing:444 - [PRMH] Th0 RTP payload type:8
+2020-02-05 16:39:50,928  INFO rtpsessions:3502 - [PRMJ] media address:192.168.99.252,8124 RawRtp callId: endpoint:192.168.99.252
+2020-02-05 16:39:50,928  INFO rtpsession:1347 - [PRMJ] 1st packet s1: 192.168.99.97,33744 192.168.99.252,8124 ssrc:0x12f45253 seq:58 ts:9200 len:160 type:8 ats:1580938790
+2020-02-05 16:39:50,928  INFO rtpsession:1628 - [PRMJ] new RTP stream: 192.168.99.97,33744 192.168.99.252,8124 ssrc:0x12f45253 seq:58 ts:9200 len:160 type:8 ats:1580938790
+2020-02-05 16:39:50,928  INFO rtpsessions:4356 - [PRMJ] created by RTP packet 192.168.99.97,33744 192.168.99.252,8124 ssrc:0x12f45253 seq:58 ts:9200 len:160 type:8 ats:1580938790
+2020-02-05 16:39:50,929  INFO rtpmixer:539 - [PRMH] First chunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+End AudioChunk In
+End AudioChunk Out
+1 LibSndFileFile::WriteChunk : 0
+End WriteChunk
+2020-02-05 16:39:50,930  INFO rtpmixer:317 - [PRMH] EOS s1: misses:0 maxgap:1 oo:0 disc:0  s2: misses:0 maxgap:1 oo:0 disc:0
+last AudioChunk IN
+last AudioChunk out
+1 LibSndFileFile::WriteChunk : 2
+2 LibSndFileFile::WriteChunk : 2
+last while
+close files
+2020-02-05 16:39:50,932  INFO batchProcessing:657 - [PRMH] Th0 stop: num samples: s1:10240 s2:9280 out:10240 queueSize:0
+2020-02-05 16:39:50,932  INFO batchProcessing:723 - [PRMH] Th0 deleting native: 20200205_163949_PRMH
+2020-02-05 16:39:50,932  INFO reporting:190 - [localhost:8080/orktrack] enqueued: type=tape recid=20200205_163949_PRMH stage=ready captureport=PRMH timestamp=1580938789 filename=2020/02/05/16/2864_To_01087011078_16-39-49_PRMH.wav localparty=2864 localentrypoint= remoteparty=01087011078 direction=out duration=1 service=orkaudio-root localip=192.168.99.97 remoteip=192.168.99.252 nativecallid=95c050a8-c0a86361-ac39639-691cf@192.168.99.252 tags= ondemand=false side=both live=true hostname=root 
+2020-02-05 16:39:50,935  INFO rtpsession:1435 - [PRMJ] 1st packet s2: 192.168.99.252,8124 192.168.99.97,33744 ssrc:0x899 seq:5642 ts:54984 len:160 type:8 ats:1580938790
+2020-02-05 16:39:53,120  INFO pcapstats:2029 - eth0: handle:f4aba0 received:643 received10s:643 dropped:0 dropped10s:0 ifdropped:0 ifdropped10s:0
+2020-02-05 16:39:53,120  INFO pcapstats:885 - numPackets:643 maxPPS:159 minPPS:42
